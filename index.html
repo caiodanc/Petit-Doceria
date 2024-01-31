@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Culinaria Afetiva</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/brigadeiro.ico" type="image/x-icon">
+
+
+    <head>
+
+
+    <body>
+
+        <div class="bloco"></div>
+        <div class="logo-box">
+            <img class="brigadeiro" src="./assets/brigadeiro.png" alt="brigadeiro"></a>
+            <img class="logo" src="./assets/Petit-Culinária-Afetiva.png" alt="simbolo-petit" class="logo">
+        </div>
+
+        <div class="header">
+            <button><a href="./index.html">Home</a></button>
+            <button><a href="./produtos.html">Produtos</a></button>
+            <button><a onclick="showform()">Fale Conosco</a></button>
+        </div>
+
+        <div class="mother-box">
+            <div class="primary-box">
+                <section>
+                    <h2 class="slogan">A <strong><span>Petit</span> Culinária Afetiva</strong> é uma Doceria Artesanal
+                        especializada em sobremesas gourmet.</h2>
+                </section>
+
+                <div class="secundary-box">
+                    <p class="text">"Nossas receitas são feitas com ingredientes <I><B>seletos</B></I> que proporcionam
+                        um
+                        sabor único e
+                        incomparável.
+                        Todo o processo de produção é feita de forma manual, trazendo toda uma exclusividade às nossas
+                        criações."</p>
+                    <img class="prato-brigadeiro" src="./assets/prato-brigadeiro.png" alt="prato-brigadeiro">
+                </div>
+
+                <div class="bloco2"></div>
+
+            </div>
+
+            <div class="address">
+                <h2 class="findus">Onde nos Encontrar</h2>
+                Rua do Imperador, 675
+                Petrópolis - Rio de Janeiro
+                Cep: 25620-000
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.8262137807255!2d-43.17618809999999!3d-22.510702600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9908022751d26b%3A0x7e6ccf63c043e026!2sRua%20do%20Imperador%2C%20675%20-%20Centro%2C%20Petr%C3%B3polis%20-%20RJ%2C%2025620-003!5e0!3m2!1spt-BR!2sbr!4v1706642840939!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="mascara"></div>
+
+        <div class="copyright">
+            <p>© 2024 Petit Gourmet. Todos os direitos reservados.</p>
+        </div>
+
+        <a href="https://wa.me/5524999999999?text=Ol%C3%A1%2C+preciso+de+ajuda+para+escolher+essas+del%C3%ADcias."
+            class="link-whatsapp">
+            <img src="./assets/whatsapp.png" alt="imagem-whatsapp">
+        </a>
+
+        <div onclick="hideform()" class="mascara-formulario"></div>
+
+        <form class="formulario-orçamento" action="https://formcarry.com/s/6E1S-OXC7Cu" method="POST"
+            enctype="multipart/form-data">
+            <input placeholder="Seu nome" type="text" name="nome">
+            <input placeholder="Seu telefone" type="text" name="telefone">
+            <input placeholder="Seu email" type="text" name="email">
+            <h3><b>Selecione o(s) produto(s) abaixo:</b></h3>
+            <label for="gourmet"><input type="checkbox" name="brigadeiro-gourmet" id="gourmet"
+                    onclick="showqtd()"><b>Brigadeiro
+                    Gourmet</b></label>
+            <input class="gourmet" placeholder="Qtd" name="Qtd-gourmet" maxlength="3">
+            <label><input type="checkbox" name="brigadeiro-cappuccino" id="cappuccino" onclick="showqtd()"><b>Brigadeiro
+                    Cappuccino</b></label>
+            <input class="cappuccino" placeholder="Qtd" name="Qtd-cappuccino" maxlength="3">
+            <label> <input type="checkbox" name="brigadeiro-pistache" id="pistache" onclick="showqtd()"><b>Brigadeiro
+                    Pistache</b></label>
+            <input class="pistache" placeholder="Qtd" name="Qtd-pistache" maxlength="3">
+            <label><input type="checkbox" name="brigadeiro-doceleite" id="doceleite" onclick="showqtd()"><b>Brigadeiro
+                    Doce de Leite</b></label>
+            <input class="doceleite" placeholder="Qtd" name="Qtd-doceleite" maxlength="3">
+            <textarea placeholder="Obervações" name="observações"></textarea>
+            <button class="botao-orçamento" type="submit">Pedir Orçamento</button>
+        </form>
+
+    </body>
+
+    <script src="./scripts.js"></script>
+
+</html>

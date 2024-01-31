@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-produtos.css">
+    <link rel="icon" href="./assets/brigadeiro.ico" type="image/x-icon">
+    <title>Produtos</title>
+
+</head>
+
+<body>
+
+    <div class="bloco"></div>
+    <div class="logo-box">
+        <img class="brigadeiro" src="./assets/brigadeiro.png" alt="brigadeiro"></a>
+        <img class="logo" src="./assets/Petit-Culinária-Afetiva.png" alt="simbolo-petit" class="logo">
+    </div>
+
+    <div class="header">
+        <button><a href="./index.html">Home</a></button>
+        <button><a href="./produtos.html">Produtos</a></button>
+        <button><a onclick="showform()">Fale Conosco</a></button>
+    </div>
+
+    <section>
+        <div class="doce">
+            <img src="./assets/gourmet.png" alt="Brigadeiro-Gourmet">
+            <h2>Brigadeiro Gourmet</h2>
+            <p>O sabor clássico que todo mundo ama!</p>
+        </div>
+
+        <div class="doce">
+            <img src="./assets/cappuccino.png" alt="Brigadeiro-Cappuccino">
+            <h2>Brigadeiro de Cappuccino</h2>
+            <p>A fusão perfeita entre a cremosidade do chocolate, a intensidade do café e a doçura envolvente.</p>
+        </div>
+
+        <div class="doce">
+            <img src="./assets/pistache.png" alt="Brigadeiro-Pistache">
+            <h2>Brigadeiro de Pistache</h2>
+            <p>Para os amantes de pistache, uma opção única e deliciosa.</p>
+        </div>
+
+        <div class="doce">
+            <img src="./assets/doceleite.png" alt="Brigadeiro-Doce-Leite">
+            <h2>Brigadeiro Doce de Leite</h2>
+            <p>"Delicie-se com o autêntico sabor do nosso Brigadeiro Gourmet de Doce de Leite: uma explosão de
+                sabor em cada mordida."</p>
+        </div>
+
+    </section>
+
+    <div onclick="hideform()" class="mascara-formulario"></div>
+
+    <form class="formulario-orçamento" action="https://formcarry.com/s/6E1S-OXC7Cu" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu telefone" type="text" name="telefone">
+        <input placeholder="Seu email" type="text" name="email">
+        <h3><b>Selecione o(s) produto(s) abaixo:</b></h3>
+        <label for="gourmet"><input type="checkbox" name="brigadeiro-gourmet" id="gourmet"
+                onclick="showqtd()"><b>Brigadeiro
+                Gourmet</b></label>
+        <input class="gourmet" placeholder="Qtd" name="Qtd-gourmet" maxlength="3">
+        <label><input type="checkbox" name="brigadeiro-cappuccino" id="cappuccino" onclick="showqtd()"><b>Brigadeiro
+                Cappuccino</b></label>
+        <input class="cappuccino" placeholder="Qtd" name="Qtd-cappuccino" maxlength="3">
+        <label> <input type="checkbox" name="brigadeiro-pistache" id="pistache" onclick="showqtd()"><b>Brigadeiro
+                Pistache</b></label>
+        <input class="pistache" placeholder="Qtd" name="Qtd-pistache" maxlength="3">
+        <label><input type="checkbox" name="brigadeiro-doceleite" id="doceleite" onclick="showqtd()"><b>Brigadeiro
+                Doce de Leite</b></label>
+        <input class="doceleite" placeholder="Qtd" name="Qtd-doceleite" maxlength="3">
+        <textarea placeholder="Obervações" name="observações"></textarea>
+        <button class="botao-orçamento" type="submit">Pedir Orçamento</button>
+    </form>
+
+    <a href="https://wa.me/5524999999999?text=Ol%C3%A1%2C+preciso+de+ajuda+para+escolher+essas+del%C3%ADcias."
+        class="link-whatsapp">
+        <img src="./assets/whatsapp.png" alt="imagem-whatsapp">
+    </a>
+
+    <footer>
+        <p>© 2024 Petit Gourmet. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
