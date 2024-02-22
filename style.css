@@ -48,7 +48,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 10px;
+    padding: 20px;
     text-decoration-line: none;
 }
 
@@ -151,10 +151,10 @@ section {
 }
 
 .copyright {
+
+    flex-direction: column;
+    text-align: center;
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
@@ -304,4 +304,152 @@ label {
     margin-top: 3px;
     margin-left: 80%;
     visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .logo-box {
+
+        margin-left: 100px;
+    }
+
+    .header {
+
+
+        display: block;
+        text-align: center;
+        margin-left: 100px;
+    }
+
+
+    .bloco {
+
+
+        display: block;
+        height: 130%;
+        width: 110%;
+        clip-path: circle(40%);
+
+
+    }
+
+    .slogan {
+        margin-top: 100px;
+        margin-left: 40px;
+        font-size: 40px;
+        width: 80%;
+        padding: 0;
+        text-align: center;
+
+
+    }
+
+    .secundary-box {
+
+        display: none;
+    }
+
+
+    .bloco2 {
+
+        display: none;
+    }
+
+
+    .address {
+
+        margin-top: 10%;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+
+    .copyright {
+
+        display: block;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+
+    .header a {
+
+
+        font-size: 10px;
+
+    }
+
+
+
+    .bloco {
+
+        display: block;
+        height: 100%;
+        width: 100%;
+        clip-path: circle(50%);
+
+    }
+
+    .slogan {
+        margin-top: -20px;
+        font-size: 25px;
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+    .secundary-box {
+
+        display: none;
+    }
+
+
+    .bloco2 {
+
+        display: none;
+    }
+
+    h2 {
+
+        display: block;
+
+    }
+
+
+    .address {
+
+
+
+        margin-top: 20%;
+        height: 20%;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .map {
+
+        margin-left: 10%;
+
+    }
+
+    .copyright {
+
+        margin-top: 10px;
+        position: absolute;
+        width: 100%;
+        font-size: 10px;
+    }
+
 }
