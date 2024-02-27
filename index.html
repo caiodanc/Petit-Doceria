@@ -6,54 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petit Culinaria Afetiva</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/brigadeiro.ico" type="image/x-icon">
-
+    <link rel="icon" href="./assets/icone.ico" type="image/x-icon">
 
     <head>
 
 
     <body>
 
-        <div class="bloco"></div>
-        <div class="logo-box">
+
+
+        <div class="circle"></div>
+        <section class="div-logo">
             <img class="brigadeiro" src="./assets/brigadeiro.png" alt="brigadeiro"></a>
             <img class="logo" src="./assets/Petit-Culinária-Afetiva.png" alt="simbolo-petit" class="logo">
-        </div>
+        </section>
 
-        <div class="header">
+        <header>
             <button><a href="./index.html">Home</a></button>
             <button><a href="./produtos.html">Produtos</a></button>
             <button><a onclick="showform()">Fale Conosco</a></button>
+        </header>
+
+        <div class="hidden">
+            <section class="slogan">
+                <h2>A <strong><span>Petit</span> Culinária Afetiva</strong> é uma Doceria Artesanal
+                    especializada em sobremesas gourmet.</h2>
+            </section>
         </div>
 
-        <div class="mother-box">
-            <div class="primary-box">
-                <section>
-                    <h2 class="slogan">A <strong><span>Petit</span> Culinária Afetiva</strong> é uma Doceria Artesanal
-                        especializada em sobremesas gourmet.</h2>
-                </section>
+        <div class="hidden">
+            <section class="section-text">
+                <p>"Nossas receitas são feitas com ingredientes <I><B>seletos</B></I> que proporcionam
+                    um
+                    sabor único e
+                    incomparável.
+                    Todo o processo de produção é feita de forma manual, trazendo toda uma exclusividade às nossas
+                    criações."</p>
+                    <div class="bloco-quadrado"></div>
+                <img src="./assets/DOCES.png" alt="">
+            </section>
+        </div>
 
-                <div class="secundary-box">
-                    <p class="text">"Nossas receitas são feitas com ingredientes <I><B>seletos</B></I> que proporcionam
-                        um
-                        sabor único e
-                        incomparável.
-                        Todo o processo de produção é feita de forma manual, trazendo toda uma exclusividade às nossas
-                        criações."</p>
-                    <img class="prato-brigadeiro" src="./assets/prato-brigadeiro.png" alt="prato-brigadeiro">
-                </div>
+        <div class="hidden">
+            <section class="section-address">
+                <h3>Onde nos Encontrar</h3>
+                <p>Rua do Imperador, 675
+                    Petrópolis - Rio de Janeiro
+                    Cep: 25620-000</p>
+            </section>
+        </div>
 
-                <div class="bloco2"></div>
-
-            </div>
-
-            <div class="address">
-                <h2 class="findus">Onde nos Encontrar</h2>
-                Rua do Imperador, 675
-                Petrópolis - Rio de Janeiro
-                Cep: 25620-000
-            </div>
-            <div class="map">
+        <div class="hidden">
+            <div class="div-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.8262137807255!2d-43.17618809999999!3d-22.510702600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9908022751d26b%3A0x7e6ccf63c043e026!2sRua%20do%20Imperador%2C%20675%20-%20Centro%2C%20Petr%C3%B3polis%20-%20RJ%2C%2025620-003!5e0!3m2!1spt-BR!2sbr!4v1706642840939!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -61,13 +65,12 @@
             </div>
         </div>
 
-        <div class="mascara"></div>
+        <div class="div-mascara"></div>
 
-        <div class="copyright">
+        <footer>
             <p>© 2024 Petit Gourmet. Todos os direitos reservados.</p>
-            
             <p>Desenvolvido por <b>Caio D. Coutinho</b> </p>
-        </div>
+        </footer>
 
         <a href="https://wa.me/5524999999999?text=Ol%C3%A1%2C+preciso+de+ajuda+para+escolher+essas+del%C3%ADcias."
             class="link-whatsapp">
@@ -98,6 +101,7 @@
             <textarea placeholder="Obervações" name="observações"></textarea>
             <button class="botao-orçamento" type="submit">Pedir Orçamento</button>
         </form>
+
 
     </body>
 

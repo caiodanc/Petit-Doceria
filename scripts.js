@@ -1,3 +1,26 @@
+const myObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+
+      entry.target.classList.remove('show')
+    }
+
+  })
+})
+
+
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach((element) => myObserver.observe(element))
+
+
+
+
+
 const form = document.querySelector(".formulario-orçamento")
 
 const mascara = document.querySelector(".mascara-formulario")
@@ -24,7 +47,7 @@ function showform() {
 
 function hideform() {
 
-  form.style.left = "-300px"
+  form.style.left = "-100%"
   mascara.style.visibility = "hidden"
   mascara.style.transitionDelay = "0.5s";
   gourmet.style.visibility = "hidden";
@@ -59,4 +82,7 @@ function showqtd() {
     doceleite.style.visibility = "hidden";
   }
 }
+
+
+
 

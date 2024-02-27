@@ -1,31 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Hind-Regular', sans-serif;
-}
-
 @font-face {
+
     font-family: "Hind-Regular";
     src: url("./fonts/Hind-Regular.ttf") format('truetype');
 }
 
+* {
 
-body {
-    font-family: 'Hind-Regular', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind-Regular', sans-serif;
+
+}
+
+body {
+
     background-color: #FFF0F5;
 }
 
-
-.logo-box {
+.div-logo {
 
     display: flex;
+    width: auto;
     align-items: center;
-    justify-content: space-between;
+    margin: 0 0 3% 0;
     flex-direction: column;
-    padding: 10px;
+
 }
 
 .logo {
@@ -35,30 +35,30 @@ body {
 
 .brigadeiro {
 
-    width: 100px;
+    width:7%;
+
 }
 
 .brigadeiro:hover {
 
-    width: 125px;
+    width: 8%;
     transition: 1s ease-in-out;
+
 }
 
+.circle {
 
-.bloco {
-    display: flex;
-    margin-top: -42vw;
-    background-color: white;
     width: 100%;
-    height: 155%;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    clip-path: circle(40%);
+    clip-path: circle(35% at 50% 0%);
+    background-color: white;
     z-index: -2;
+
 }
 
-.header {
+header {
 
     display: flex;
     align-items: center;
@@ -66,31 +66,53 @@ body {
     gap: 20px;
     padding: 10px;
     text-decoration-line: none;
+
 }
 
-.header button {
+header button {
+
     background-color: #FFFAFA;
     border-radius: 10px;
-    border: 1px solid #FFE0E9;
+    border: none;
+    box-shadow: 2px 1px 5px #64370B;
     width: 100px;
     cursor: pointer;
     font-size: 15px;
+
 }
 
-.header a {
+header a {
+
     text-decoration: none;
     color: #64370B;
+    font-weight: 600;
+
 }
 
+header button:active {
+
+    opacity: 0.5;
+
+}
 
 section {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2em;
+    margin: 8em 2em;
+
+}
+
+.foto-doce {
+
+    width: 300px;
+    height: 300px;
+
 }
 
 .doce {
+
     width: 300px;
     margin: 1em;
     padding: 1em;
@@ -98,26 +120,15 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+
 }
 
 .doce img {
+
     max-width: 100%;
     border-radius: 6px;
     margin-bottom: 1em;
-}
 
-footer {
-    background-color: #FFFAFA;
-    color: black;
-    text-align: center;
-    padding: 1em;
-}
-
-.link-whatsapp img {
-    height: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
 }
 
 .mascara-formulario {
@@ -129,9 +140,11 @@ footer {
     height: 100vh;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7988445378151261) 30%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 70%);
     transition: visibility 1s ease-in-out;
+
 }
 
 .formulario-orçamento {
+
     background-color: gray;
     background-size: 120vh;
     background-position: 40%;
@@ -146,9 +159,11 @@ footer {
     gap: 5px;
     transition: left 1.7s ease-in-out;
     z-index: 2;
+
 }
 
 h3 {
+
     padding: 10px;
     color: black;
     font-size: 25px;
@@ -163,9 +178,11 @@ input {
     border: 1px solid black;
     padding-left: 5px;
     outline-color: #64370B;
+
 }
 
 textarea {
+
     margin-top: 20px;
     width: 400px;
     height: 100px;
@@ -173,9 +190,11 @@ textarea {
     border: 1px solid black;
     padding: 5px;
     outline-color: #64370B;
+
 }
 
 label {
+
     color: black;
     background-color: #FFE0E9;
     display: flex;
@@ -189,14 +208,17 @@ label {
     text-transform: uppercase;
     border-radius: 4px;
     width: 70%;
+
 }
 
 ::placeholder {
 
     color: rebeccapurple;
+
 }
 
 .botao-orçamento {
+
     margin-left: 100px;
     width: 200px;
     height: 50%;
@@ -207,6 +229,7 @@ label {
     color: black;
     cursor: pointer;
     font-size: 15px;
+
 }
 
 .gourmet {
@@ -219,25 +242,274 @@ label {
 }
 
 .cappuccino {
+
     width: 9%;
     height: 32px;
     margin-top: 3px;
     margin-left: 80%;
     visibility: hidden;
+
 }
 
 .pistache {
+
     width: 9%;
     height: 32px;
     margin-top: 3px;
     margin-left: 80%;
     visibility: hidden;
+
 }
 
 .doceleite {
+
     width: 9%;
     height: 32px;
     margin-top: 3px;
     margin-left: 80%;
     visibility: hidden;
+
 }
+
+.link-whatsapp img {
+
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.link-whatsapp img:hover {
+
+    height: 70px;
+    transition: 1s ease-in-out;
+
+}
+
+footer {
+
+    background-color: #FFFAFA;
+    color: black;
+    text-align: center;
+    padding: 1em;
+
+}
+
+.hidden {
+
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+    
+}
+
+.show {
+
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+
+}
+
+.hidden:nth-child(2){
+
+    transition-delay: 400ms;
+
+}
+
+.hidden:nth-child(3){
+
+    transition-delay: 700ms;
+
+}
+
+.hidden:nth-child(4){
+
+    transition-delay: 1000ms;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .brigadeiro {
+
+        width: 50px;
+
+    }
+
+    .brigadeiro:hover {
+
+        width: 50px;
+        transition: none;
+
+    }
+
+    .logo {
+
+        width: 150px;
+
+    }
+
+
+    header a {
+
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    header button {
+
+        width: 70px;
+
+    }
+
+    h3 {
+
+        font-size: 15px;
+
+    }
+
+    label {
+
+        font-size: 10px;
+
+    }
+
+    textarea {
+
+        width: 100%;
+
+    }
+
+    .botao-orçamento {
+
+        width: auto;
+        height: auto;
+        margin: 30px 0;
+
+    }
+
+    .formulario-orçamento {
+
+        margin-top: 5%;
+        width: 90%;
+        height: 70%;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+
+    .brigadeiro {
+
+        width: 70px;
+
+    }
+
+    .brigadeiro:hover {
+
+        width: 70px;
+        transition: none;
+
+    }
+
+    .logo {
+
+        width: 180px;
+
+    }
+
+    .div-logo {
+
+        margin-bottom: 80px;
+
+    }
+
+
+    header button {
+
+        background: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 1px 5px #64370B;
+        width: 25%;
+        cursor: pointer;
+        font-size: 12px;
+
+    }
+
+    header a {
+
+        color: black;
+
+    }
+
+    section {
+
+        margin: 50px 0;
+    }
+
+   
+    .link-whatsapp img {
+
+        width: auto;
+        height: 5%;
+
+    }
+
+    .link-whatsapp img:hover {
+
+        height: 8%;
+        transition: 1s ease-in-out;
+
+    }
+
+    
+    footer {
+
+        font-size: 10px;
+
+    }
+
+    
+    h3 {
+
+        font-size: 15px;
+
+    }
+
+    label {
+
+        font-size: 10px;
+
+    }
+
+    textarea {
+
+        width: 100%;
+
+    }
+
+    .botao-orçamento {
+
+        width: auto;
+        height: auto;
+        margin: 30px 0;
+
+    }
+
+    .formulario-orçamento {
+
+        margin-top: 5%;
+        width: 90%;
+        height: 90%;
+
+    }
+}
+
